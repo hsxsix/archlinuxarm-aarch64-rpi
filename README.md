@@ -4,7 +4,7 @@ kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux)
 Suitable for Raspberry pi 3B, 3B+, 3A, 4B
 
 ### Getting Started
-Download the [archlinux-aarch64-rpi.img](https://www.hsxsix.com/),
+Download the [archlinux-aarch64-rpi.img](https://www.hsxsix.com/archlinux-aarch64-rpi.img) or [archlinux-aarch64-rpi.tar.gz](https://www.hsxsix.com/archlinux-aarch64-rpi.tar.gz),
 and install images, if you don't know how to install, please read raspberry official installation documentation
 at [install images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 
