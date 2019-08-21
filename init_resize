@@ -1,0 +1,23 @@
+#!/bin/bash
+ROOT_PART=$(mount | sed -n 's|^/dev/\(.*\) on / .*|\1|p')
+PART_NUM=${ROOT_PART#mmcblk0p}
+echo "found root partition at /dev/$ROOT_PART, start to resize..."
+
+fdisk /dev/mmcblk0 <<EOF
+p
+d
+$PART_NUM
+n
+p
+$PART_NUM
+
+
+p
+w
+EOF
+
+resize2fs /dev/$ROOT_PART
+rm -rf /usr/bin/init_resize
+echo "Root partition has been resized.\nThe system will reboot"
+reboot
+
