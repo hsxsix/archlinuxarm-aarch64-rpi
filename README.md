@@ -24,7 +24,7 @@ to extended rootfs space to the entrie tf card, it will reboot.
 next everything is given to google and archlinux wiki!
 
 ### Notice
-at /root has a yay package, if you want to install an aur helper tools, yay is a good choice.
+at /root has a yay package, if you want to install an [aur helper](https://wiki.archlinux.org/index.php/AUR_helpers) tools, [yay](https://github.com/Jguer/yay) is a good choice.
 ```
 pacman -U yay-xxx.xz
 ```
