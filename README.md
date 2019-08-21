@@ -1,6 +1,6 @@
 ### Archlinux aarch64 for Raspberry Pi
 
-kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux)
+kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux) and [archlinuxarm arrch64](https://archlinuxarm.org/platforms/armv8/generic)
 Suitable for Raspberry pi 3B, 3B+, 3A, 4B
 
 ### Getting Started
@@ -24,10 +24,26 @@ to extended rootfs space to the entrie tf card, it will reboot.
 next everything is given to google and archlinux wiki!
 
 ### Notice
+
+#### for aur helper
 at /root has a yay package, if you want to install an [aur helper](https://wiki.archlinux.org/index.php/AUR_helpers) tools, [yay](https://github.com/Jguer/yay) is a good choice.
 ```
 pacman -U yay-xxx.xz
 ```
 
-### Issus
+#### for mirrors
+the [archlinux mirrors](https://wiki.archlinux.org/index.php/Mirrors) default is "https://mirrors.tuna.tsinghua.edu.cn/",
+please change according to your country and region.
+
+#### GPIO
+
+```
+# pacman -S python python-pip
+# pip install RPi.GPIO
+```
+RPi.GPIO works well
+
+### Issue
+Personal production, there are many unknown problems.
+
 If you encounter an unresolved problem during use, please submit an issue for me.
