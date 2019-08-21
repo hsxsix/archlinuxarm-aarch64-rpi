@@ -1,6 +1,6 @@
 ### Archlinux aarch64 for Raspberry Pi
 
-kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux) and [archlinuxarm arrch64](https://archlinuxarm.org/platforms/armv8/generic)
+kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux) and rootfs base on [archlinuxarm aarch64](https://archlinuxarm.org/platforms/armv8/generic)
 Suitable for Raspberry pi 3B, 3B+, 3A, 4B
 
 ### Getting Started
