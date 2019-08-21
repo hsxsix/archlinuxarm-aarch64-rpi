@@ -4,9 +4,10 @@ kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux)
 Suitable for Raspberry pi 3B, 3B+, 3A, 4B
 
 ### Getting Started
-Download the [archlinux-aarch64-rpi.img](https://www.hsxsix.com/archlinux-aarch64-rpi.img),
+Download the [archlinux-aarch64-rpi.img](https://www.hsxsix.com/),
 and install images, if you don't know how to install, please read raspberry official installation documentation
-at [install images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+at [install images](https://www.raspberrypi.org/documentation/installation/installing-images/README.md).
+
 the Wifi Configuration at '/boot/wpa_supplicant.conf', you can add your wifi information to the format inside. 
 If there is nothing wrong with it, raspberry pi will automatically connect to your wifi at boot.
 The default root password is root.
@@ -22,5 +23,11 @@ init_resize
 to extended rootfs space to the entrie tf card, it will reboot.
 next everything is given to google and archlinux wiki!
 
-### ISSUS
+### Notice
+at /root has a yay package, if you want to install an aur helper tools, yay is a good choice.
+```
+pacman -U yay-xxx.xz
+```
+
+### Issus
 If you encounter an unresolved problem during use, please submit an issue for me.
