@@ -43,6 +43,20 @@ please change according to your country and region.
 ```
 RPi.GPIO works well
 
+#### Camera
+Append to /boot/config.txt: 
+```
+gpu_mem=128
+```
+if use 800w pixel camera, you had better set gpu_mem=256
+
+In order to use standard applications (those that look for /dev/video0) the V4L2 driver must be loaded. This can be done automatically at boot by creating an autoload file, /etc/modules-load.d/rpi-camera.conf:
+
+bcm2835-v4l2
+The V4L2 driver by default only allows video recording up to 1280x720, else it glues together consecutive still screens resulting in videos of 4 fps or lower. Adding the following options removes this limitation, /etc/modprobe.d/rpi-camera.conf:
+
+options bcm2835-v4l2 max_video_width=3240 max_video_height=2464
+
 ### Issue
 Personal production, there are many unknown problems.
 
