@@ -3,6 +3,12 @@
 kernel base on [raspberrypi/linux](https://www.github.com/raspberrypi/linux) and rootfs base on [archlinuxarm aarch64](https://archlinuxarm.org/platforms/armv8/generic)
 Suitable for Raspberry pi 3B, 3B+, 3A, 4B
 
+### Update
+Now the official has released a 64-bit kernel, no need to compile manually!
+looook here: [https://github.com/raspberrypi/firmware](https://github.com/raspberrypi/firmware),
+The kernel latest version is 4.19.88
+
+******
 ### Getting Started
 Download the [archlinuxarm-aarch64-rpi.img](https://file.hsxsix.com/other/archlinuxarm-aarch64-rpi.img) or [archlinuxarm-aarch64-rpi.tar.gz](https://file.hsxsix.com/archive/archlinuxarm-aarch64-rpi.tar.gz),
 and install images, if you don't know how to install, please read raspberry official installation documentation
